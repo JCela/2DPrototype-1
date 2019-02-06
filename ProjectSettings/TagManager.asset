@@ -11,6 +11,7 @@ TagManager:
   - Wood
   - Copper
   - Fire
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX

@@ -3,23 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //this one only has one destination
+//will always move to endpos before coming back to startingpos
 public class MovingPlatform : MonoBehaviour
 {
     public float speed;
-    //public float endPosX;
-    //public float endPosY;
     public float waitAtEdgeTimer;
     private float _timer;
-
+    
+    [Tooltip("Starting position will be current position unless this is checked")]
+    public bool difStartPos;
+    public Vector3 startingPos;
+    private Vector3 _startPos;
     public Vector3 endPos;
-    Vector3 startPos;
-    Vector3 dir;
 
     private void Start()
     {
-        //endPos = new Vector3(endPosX, endPosY, 0f);
-        startPos = transform.position;
-        dir = transform.position - endPos;
+        
+        if (difStartPos)
+            _startPos = startingPos;
+        else
+            _startPos = transform.position;
+            
         _timer = waitAtEdgeTimer;
     }
 
@@ -34,8 +38,8 @@ public class MovingPlatform : MonoBehaviour
                 _timer -= Time.deltaTime;
             } else 
             {
-                endPos = startPos;
-                startPos = transform.position;
+                endPos = _startPos;
+                _startPos = transform.position;
                 _timer = waitAtEdgeTimer;
             }
         } else

@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 469605320}
   - component: {fileID: 469605319}
   - component: {fileID: 469605318}
+  - component: {fileID: 469605324}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player1
@@ -390,6 +391,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &469605324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469605317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a85c4f6631f4048943f5abb2d40e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &529098021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1054,10 +1067,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: movingPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 5069804767144335576, guid: bef383d1d420bcb43b8305e69c07526f,
+        type: 3}
+      propertyPath: m_TagString
+      value: MovingPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 5069804767144335557, guid: bef383d1d420bcb43b8305e69c07526f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 5069804767144335557, guid: bef383d1d420bcb43b8305e69c07526f,
         type: 3}
@@ -1108,6 +1126,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5069804767144335559, guid: bef383d1d420bcb43b8305e69c07526f,
+        type: 3}
+      propertyPath: startingPos.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5069804767144335559, guid: bef383d1d420bcb43b8305e69c07526f,
+        type: 3}
+      propertyPath: difStartPos
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bef383d1d420bcb43b8305e69c07526f, type: 3}
