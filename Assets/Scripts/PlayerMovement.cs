@@ -30,12 +30,12 @@ public class PlayerMovement : MonoBehaviour
 		{
 			
 			float translationP1 = Input.GetAxis("JoyP1") * speed;
-			if (translationP1 < 0)
+			if (translationP1 < 0 || Input.GetKey(KeyCode.A))
 			{
 				StartCoroutine(PlayerMoveLeftCoroutine());
 
 			}
-			if (translationP1 > 0)
+			if (translationP1 > 0 || Input.GetKey(KeyCode.D))
 			{
 				StartCoroutine(PlayerMoveRightCoroutine());
 			}
@@ -52,28 +52,28 @@ public class PlayerMovement : MonoBehaviour
 
 		}
 
-		if (this.tag == "Player2")
-		{
-			float translationP2 = Input.GetAxis("JoyP2") * speed;
-			if (translationP2 < 0)
-			{
-				StartCoroutine(PlayerMoveLeftCoroutine());
-
-			}
-			if (translationP2 > 0)
-			{
-				StartCoroutine(PlayerMoveRightCoroutine());
-			}
-			if (isGrounded == true && jumpBuffer < 0)
-			{
-				if (Input.GetButton("JumpP2"))
-				{
-					StartCoroutine(PlayerMoveUpCoroutine());
-					isGrounded = false;
-					jumpBuffer = 10;
-				}
-			}
-		}
+		//if (this.tag == "Player2")
+		//{
+		//	float translationP2 = Input.GetAxis("JoyP2") * speed;
+		//	if (translationP2 < 0 || Input.GetKey(KeyCode.J))
+		//	{
+		//		StartCoroutine(PlayerMoveLeftCoroutine());
+//
+		//	}
+		//	if (translationP2 > 0 || Input.GetKey(KeyCode.L))
+		//	{
+		//		StartCoroutine(PlayerMoveRightCoroutine());
+		//	}
+		//	if (isGrounded == true && jumpBuffer < 0)
+		//	{
+		//		if (Input.GetButton("JumpP2"))
+		//		{
+		//			StartCoroutine(PlayerMoveUpCoroutine());
+		//			isGrounded = false;
+		//			jumpBuffer = 10;
+		//		}
+		//	}
+		//}
 	}
 
 	IEnumerator PlayerMoveLeftCoroutine()
