@@ -10,6 +10,7 @@ TagManager:
   - Ice
   - Wood
   - Copper
+  - Fire
   layers:
   - Default
   - TransparentFX
