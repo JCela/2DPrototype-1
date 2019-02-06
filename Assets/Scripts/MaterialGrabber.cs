@@ -39,7 +39,7 @@ public class MaterialGrabber : MonoBehaviour
         {
             GrabMaterial();
         }
-        Debug.DrawLine(this.transform.position, new Vector3(aimDirection.x, aimDirection.y,0) * raycastDistance);
+        Debug.DrawLine(this.transform.position, this.transform.position + (new Vector3(aimDirection.x, aimDirection.y,0) * raycastDistance));
     }
 
     void GrabMaterial()
