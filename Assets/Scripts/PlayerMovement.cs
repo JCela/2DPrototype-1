@@ -9,7 +9,10 @@ public class PlayerMovement : MonoBehaviour
 	private float speed = 50f;
 	private bool isGrounded;
 	private float jumpBuffer = 10;
-
+	public LayerMask ground_layers;
+	public Transform top_left_gc;
+	private float gcRadius = 0.2f;
+	
 	void Start ()
 	{
 		sr = gameObject.GetComponent<SpriteRenderer>();
@@ -19,13 +22,8 @@ public class PlayerMovement : MonoBehaviour
 	void Update ()
 	{
 		jumpBuffer -= 1;
-		Ray groundCheckRay = new Ray(this.transform.position, this.transform.up*-1);
-		float groundCheckRayLength = 0.43f;
-		Debug.DrawRay(groundCheckRay.origin, groundCheckRay.direction * groundCheckRayLength, Color.yellow);
-		if (Physics.Raycast(groundCheckRay, groundCheckRayLength))
-		{
-			isGrounded = true;
-		}
+		isGrounded = Physics2D.OverlapCircle(top_left_gc.position, gcRadius , ground_layers);
+	
 		if (this.tag == "Player1")
 		{
 			
