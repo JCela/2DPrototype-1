@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Andrew\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Andrew\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_2D Prototype 1.-1194058999.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Andrew\Documents\NYU\Spring 2019\Team Dev Studio\2D Prototype 1" t="IncludeRecursive">
+      <e p="2D Prototype 1.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="GMScript.cs" t="Include" />
+          <e p="MaterialGrabber.cs" t="Include" />
+          <e p="PlayerManager.cs" t="Include" />
+          <e p="PlayerMovement.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

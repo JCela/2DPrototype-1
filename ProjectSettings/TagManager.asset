@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Player1
   - Player2
+  - Steel
+  - Ice
+  - Wood
+  - Copper
   layers:
   - Default
   - TransparentFX
