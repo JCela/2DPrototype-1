@@ -13,20 +13,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MaterialGrabber.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="105">
+              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding>
-                <marker date="1549650799423" expanded="false" signature="6:78" ph="..." />
-                <marker date="1549650799423" expanded="true" signature="124:1821" ph="{...}" />
-                <marker date="1549650799423" expanded="true" signature="564:630" ph="{...}" />
-                <marker date="1549650799423" expanded="true" signature="649:1172" ph="{...}" />
-                <marker date="1549650799423" expanded="true" signature="976:1024" ph="{...}" />
-                <marker date="1549650799423" expanded="true" signature="1197:1728" ph="{...}" />
-                <marker date="1549650799423" expanded="true" signature="1337:1387" ph="{...}" />
-                <marker date="1549650799423" expanded="true" signature="1431:1479" ph="{...}" />
-                <marker date="1549650799423" expanded="true" signature="1524:1573" ph="{...}" />
-                <marker date="1549650799423" expanded="true" signature="1620:1671" ph="{...}" />
-                <marker date="1549650799423" expanded="true" signature="1753:1819" ph="{...}" />
+                <marker date="1549651549649" expanded="false" signature="6:78" ph="..." />
+                <marker date="1549651549649" expanded="true" signature="124:1817" ph="{...}" />
+                <marker date="1549651549649" expanded="true" signature="560:626" ph="{...}" />
+                <marker date="1549651549649" expanded="true" signature="645:1168" ph="{...}" />
+                <marker date="1549651549649" expanded="true" signature="972:1020" ph="{...}" />
+                <marker date="1549651549649" expanded="true" signature="1193:1724" ph="{...}" />
+                <marker date="1549651549649" expanded="true" signature="1333:1383" ph="{...}" />
+                <marker date="1549651549649" expanded="true" signature="1427:1475" ph="{...}" />
+                <marker date="1549651549649" expanded="true" signature="1520:1569" ph="{...}" />
+                <marker date="1549651549649" expanded="true" signature="1616:1667" ph="{...}" />
+                <marker date="1549651549649" expanded="true" signature="1749:1815" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -35,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <marker date="1549651240814" expanded="true" signature="6:113" ph="..." />
                 <marker date="1549651240814" expanded="true" signature="155:936" ph="{...}" />
@@ -91,8 +91,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/MaterialGrabber.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MaterialGrabber.cs" />
       </list>
     </option>
   </component>
@@ -166,12 +166,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549479446654</updated>
       <workItem from="1549479452176" duration="5511000" />
-      <workItem from="1549650489694" duration="768000" />
+      <workItem from="1549650489694" duration="1063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6279000" />
+    <option name="totallyTimeSpent" value="6574000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -260,28 +260,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MaterialGrabber.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="105">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
-            <marker date="1549650799423" expanded="false" signature="6:78" ph="..." />
-            <marker date="1549650799423" expanded="true" signature="124:1821" ph="{...}" />
-            <marker date="1549650799423" expanded="true" signature="564:630" ph="{...}" />
-            <marker date="1549650799423" expanded="true" signature="649:1172" ph="{...}" />
-            <marker date="1549650799423" expanded="true" signature="976:1024" ph="{...}" />
-            <marker date="1549650799423" expanded="true" signature="1197:1728" ph="{...}" />
-            <marker date="1549650799423" expanded="true" signature="1337:1387" ph="{...}" />
-            <marker date="1549650799423" expanded="true" signature="1431:1479" ph="{...}" />
-            <marker date="1549650799423" expanded="true" signature="1524:1573" ph="{...}" />
-            <marker date="1549650799423" expanded="true" signature="1620:1671" ph="{...}" />
-            <marker date="1549650799423" expanded="true" signature="1753:1819" ph="{...}" />
+            <marker date="1549651549649" expanded="false" signature="6:78" ph="..." />
+            <marker date="1549651549649" expanded="true" signature="124:1817" ph="{...}" />
+            <marker date="1549651549649" expanded="true" signature="560:626" ph="{...}" />
+            <marker date="1549651549649" expanded="true" signature="645:1168" ph="{...}" />
+            <marker date="1549651549649" expanded="true" signature="972:1020" ph="{...}" />
+            <marker date="1549651549649" expanded="true" signature="1193:1724" ph="{...}" />
+            <marker date="1549651549649" expanded="true" signature="1333:1383" ph="{...}" />
+            <marker date="1549651549649" expanded="true" signature="1427:1475" ph="{...}" />
+            <marker date="1549651549649" expanded="true" signature="1520:1569" ph="{...}" />
+            <marker date="1549651549649" expanded="true" signature="1616:1667" ph="{...}" />
+            <marker date="1549651549649" expanded="true" signature="1749:1815" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <marker date="1549651240814" expanded="true" signature="6:113" ph="..." />
             <marker date="1549651240814" expanded="true" signature="155:936" ph="{...}" />

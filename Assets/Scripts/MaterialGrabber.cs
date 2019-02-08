@@ -8,10 +8,10 @@ public class MaterialGrabber : MonoBehaviour
     
     public static int material;
     
-    public static int STEEL = 0;
-    public static int ICE = 1;
-    public static int WOOD = 2;
-    public static int COPPER = 3;
+    public const int STEEL = 0;
+    public const int ICE = 1;
+    public const int WOOD = 2;
+    public const int COPPER = 3;
 
     private bool isGrabReady = true;
     public float raycastDistance = 3.0f;
