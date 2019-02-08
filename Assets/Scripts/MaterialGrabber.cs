@@ -6,15 +6,15 @@ public class MaterialGrabber : MonoBehaviour
 {
     private LineRenderer _lineRenderer;
     
-    public int material;
+    public static int material;
     
-    private int STEEL = 0;
-    private int ICE = 1;
-    private int WOOD = 2;
-    private int COPPER = 3;
+    public static int STEEL = 0;
+    public static int ICE = 1;
+    public static int WOOD = 2;
+    public static int COPPER = 3;
 
     private bool isGrabReady = true;
-    public float raycastDistance;
+    public float raycastDistance = 3.0f;
     
     private Vector2 playerPos;
     private Vector2 aimDirection;
