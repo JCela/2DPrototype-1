@@ -10,6 +10,8 @@ TagManager:
   - Ice
   - Wood
   - Copper
+  - Fire
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX
