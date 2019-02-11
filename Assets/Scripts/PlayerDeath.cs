@@ -17,8 +17,29 @@ public class PlayerDeath : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
-
+/*
     private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("fire"))
+        {
+            if (MaterialGrabber.material == MaterialGrabber.ICE)
+            {
+                Death();
+            }
+            if (MaterialGrabber.material == MaterialGrabber.WOOD)
+            {
+                Death();
+            }
+        }
+        
+        if (other.gameObject.CompareTag("outOfBounds"))
+        {
+            Death();
+        }
+    }
+    */
+    
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("fire"))
         {
