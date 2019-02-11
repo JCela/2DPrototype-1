@@ -23,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
 
 	void Update ()
 	{
-		//currentMat = MaterialGrabber.material;  Once integration is complete.
-		currentMat = 1;
+		currentMat = MaterialGrabber.material;  //Once integration is complete.
+		//currentMat = 1;
 		jumpBuffer -= 1;
 		isGrounded = Physics2D.OverlapCircle(top_left_gc.position, gcRadius , ground_layers);
 	

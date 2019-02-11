@@ -6,6 +6,8 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="GMScript.cs" t="Include" />
+          <e p="MaterialGrabber.cs" t="Include" />
+          <e p="PlayerDeath.cs" t="Include" />
           <e p="PlayerManager.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
         </e>
