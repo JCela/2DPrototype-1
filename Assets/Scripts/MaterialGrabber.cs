@@ -6,15 +6,15 @@ public class MaterialGrabber : MonoBehaviour
 {
     private LineRenderer _lineRenderer;
     
-    public int material;
+    public static int material;
     
-    private int STEEL = 0;
-    private int ICE = 1;
-    private int WOOD = 2;
-    private int COPPER = 3;
+    public const int STEEL = 0;
+    public const int ICE = 1;
+    public const int WOOD = 2;
+    public const int COPPER = 3;
 
     private bool isGrabReady = true;
-    public float raycastDistance;
+    public float raycastDistance = 3.0f;
     
     private Vector2 playerPos;
     private Vector2 aimDirection;
@@ -39,7 +39,7 @@ public class MaterialGrabber : MonoBehaviour
         {
             GrabMaterial();
         }
-        Debug.DrawLine(this.transform.position, new Vector3(aimDirection.x, aimDirection.y,0) * raycastDistance);
+        Debug.DrawLine(this.transform.position, this.transform.position + (new Vector3(aimDirection.x, aimDirection.y,0) * raycastDistance));
     }
 
     void GrabMaterial()
