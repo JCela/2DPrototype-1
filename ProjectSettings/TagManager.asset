@@ -4,19 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Player1
-  - Player2
   - Steel
-  - Ice
-  - Wood
-  - Copper
-<<<<<<< HEAD
-  - fire
-  - outOfBounds
-=======
   - Fire
-  - MovingPlatform
->>>>>>> ae5f94ea2983e95bd8d5960017c6e8fd31b5eda5
   layers:
   - Default
   - TransparentFX
@@ -26,8 +15,8 @@ TagManager:
   - UI
   - 
   - 
-  - Player
-  - Ground
+  - 
+  - 
   - 
   - 
   - 
@@ -53,13 +42,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Foreground
-    uniqueID: 3617441877
-    locked: 0
-  - name: Player
-    uniqueID: 2603775283
-    locked: 0
-  - name: Background
-    uniqueID: 3965715421
     locked: 0

@@ -7,7 +7,22 @@ public class MaterialGrabber : MonoBehaviour
     private LineRenderer _lineRenderer;
     
     public static int material;
+
+    #region To Discuss Later
+    public enum Material
+    {
+        Steel,
+        Ice,
+        Wood,
+        Copper,
+        None,
+    }
+
+    public Material currentMaterial;
     
+    #endregion
+
+    public const int NONE = -1;
     public const int STEEL = 0;
     public const int ICE = 1;
     public const int WOOD = 2;
@@ -24,11 +39,12 @@ public class MaterialGrabber : MonoBehaviour
     void Start()
     {
         _lineRenderer = GetComponent<LineRenderer>();
+        material = STEEL;
     }
 
     void Update()
     {
-        playerPos = this.transform.position;
+        playerPos = transform.position;
         
         float aimHorizontal = Input.GetAxisRaw("ArrowKeysHorizontal");
         float aimVertical = Input.GetAxisRaw("ArrowKeysVertical");
@@ -45,23 +61,52 @@ public class MaterialGrabber : MonoBehaviour
     void GrabMaterial()
     {
         RaycastHit2D hit = Physics2D.Raycast(playerPos, aimDirection, raycastDistance);
-        if (hit.collider.CompareTag("Steel"))
+        
+        if (hit.collider != null)
         {
-            material = STEEL;
+            switch (hit.collider.tag)
+            {
+                case ("Steel") :
+                    material = STEEL;
+                    break;
+                case ("Ice") :
+                    material = ICE;
+                    break;
+                case ("Wood") :
+                    material = WOOD;
+                    break;
+                case ("Copper") :
+                    material = COPPER;
+                    break;
+                default :
+                    material = NONE;
+                    break;
+            }
+            
+            /*
+            if (hit.collider.CompareTag("Steel"))
+            {
+                material = STEEL;
+            }
+
+            else if (hit.collider.CompareTag("Ice"))
+            {
+                material = ICE;
+            }
+
+            else if (hit.collider.CompareTag("Wood"))
+            {
+                material = WOOD;
+            }
+
+            else if (hit.collider.CompareTag("Copper"))
+            {
+                material = COPPER;
+            }
+            */
+
+            linePositions[1] = hit.transform.position;
         }
-        if (hit.collider.CompareTag("Ice"))
-        {
-            material = ICE;
-        }
-        if (hit.collider.CompareTag("Wood"))
-        {
-            material = WOOD;
-        }
-        if (hit.collider.CompareTag("Copper"))
-        {
-            material = COPPER;
-        }
-        linePositions[1] = hit.transform.position;
     }
 
     void DrawGrabLine()
